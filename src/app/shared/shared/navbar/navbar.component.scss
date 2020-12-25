@@ -1,0 +1,27 @@
+
+// Spaces the navbar from Logo to links on the right
+.nav-spacer {
+  flex: 1 1 auto;
+}
+
+// White font for logo
+a {
+  color: white;
+  font-size: 1.3rem;
+}
+
+// Color changes when a menu item is hovered on
+a:hover {
+  cursor: pointer;
+  color: lightsteelblue;
+}
+
+// shows selected route
+.navbar-selected{
+  color: lightblue;
+}
+
+// align mat icon to inline
+.mat-icon {
+  vertical-align: middle;
+}
