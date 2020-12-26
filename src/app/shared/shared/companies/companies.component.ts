@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Company } from 'src/app/core/companies';
+import { MatDialog } from '@angular/material/dialog';
+import { CarouselComponent } from '../carousel/carousel.component';
 
 @Component({
   selector: 'app-companies',
@@ -40,9 +42,21 @@ export class CompaniesComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(
+    public dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
   }
 
+  // showCarousel opens carousel component displays projects using bootstrap carousel
+  showCarousel(company: Company): void {
+    if (company.heading === 'Morris Cerullo World Evangelism') {
+      this.dialog.open(CarouselComponent, {
+        disableClose: false
+      });
+    } else {
+      return;
+    }
+  }
 }

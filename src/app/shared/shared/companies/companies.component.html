@@ -1,5 +1,6 @@
 <div class="flex-box">
   <mat-card
+    (click)="showCarousel(company)"
     *ngFor="let company of companies"
     class="card-style container card-margin mat-elevation-z8"
     matTooltip="{{company.description}}">
