@@ -1,0 +1,17 @@
+
+<mat-card
+  class="card-style container card-margin"
+  *ngFor="let company of companies">
+
+  <!-- Heading -->
+  <mat-card-title>
+    {{company.heading}}
+  </mat-card-title>
+
+  <!-- Content -->
+  <mat-card-content>
+    <h4>
+      {{company.description}}
+    </h4>
+  </mat-card-content>
+</mat-card>
