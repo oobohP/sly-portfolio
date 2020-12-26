@@ -1,7 +1,20 @@
 
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .card-style {
+  // card properties
   color: black;
-  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  max-width: 400px;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
 
+  // card animations
+  transition: transform .3s;
+}
+
+.card-style:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }

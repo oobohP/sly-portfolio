@@ -1,17 +1,24 @@
+<div class="flex-box">
+  <mat-card
+    *ngFor="let company of companies"
+    class="card-style container card-margin mat-elevation-z8"
+    matTooltip="{{company.description}}">
 
-<mat-card
-  class="card-style container card-margin"
-  *ngFor="let company of companies">
+    <mat-card-header>
+      <!-- Heading -->
+      <mat-card-title>
+        {{ company.heading }}
+      </mat-card-title>
+    </mat-card-header>
 
-  <!-- Heading -->
-  <mat-card-title>
-    {{company.heading}}
-  </mat-card-title>
+    <img mat-card-image src="{{ company.siteLogo }}" alt="companies card">
 
-  <!-- Content -->
-  <mat-card-content>
-    <h4>
-      {{company.description}}
-    </h4>
-  </mat-card-content>
-</mat-card>
+    <!-- Content -->
+    <!-- <mat-card-content>
+      <h4>
+        {{ company.description }}
+      </h4>
+    </mat-card-content> -->
+
+  </mat-card>
+</div>
