@@ -1,0 +1,44 @@
+
+.splash {
+  height: 100%;
+  background-image: url('../../../assets/vectors/material-bg2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+mat-card {
+  // outline: 2px dashed blue;
+  top: 35%;
+  color: black;
+  position: relative;
+  text-align: center;
+  background-color: transparent;
+}
+
+mat-card-subtitle {
+  padding-top: 2%;
+  color:grey;
+  font-weight: bold;
+}
+
+// Icon animation
+mat-icon {
+  animation-name: icon;
+  animation-iteration-count: infinite;
+  animation-duration: .8s;
+  animation-direction: alternate;
+}
+
+@keyframes icon {
+  from {
+    font-size: 30px;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);}
+  to {
+    font-size: 35px;
+    transform: translateY(-10px);
+  }
+}

@@ -1,8 +1,9 @@
 
 // Data model for Company
 export interface Company {
-  heading: string;
-  description: string;
   tech: string;
+  heading: string;
   siteLogo: string;
+  description: string;
+  websiteLink: string;
 }
