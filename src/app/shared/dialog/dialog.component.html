@@ -1,0 +1,22 @@
+<h1 mat-dialog-title>Please Enter The Password<mat-divider></mat-divider></h1>
+
+
+<form [formGroup]="dialogForm">
+  <mat-dialog-content>
+    <mat-form-field>
+      <input
+      matInput
+      formControlName="resumePassword"
+      type="text"
+      placeholder="Please Enter the password"
+      required>
+    </mat-form-field>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <div matTooltip="Please fill out the missing fields" [matTooltipDisabled]="!dialogForm.invalid" class="save-button-margin">
+      <button mat-raised-button type="submit" (click)="onSubmit()" [disabled]="!dialogForm.valid">Save</button>
+    </div>
+  <button mat-raised-button type="reset" (click)="dialogRef.close()">Cancel</button>
+  </mat-dialog-actions>
+</form>

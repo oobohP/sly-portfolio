@@ -6,6 +6,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 @NgModule({
   imports: [
@@ -16,6 +21,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatCardModule,
     MatTooltipModule,
     MatDialogModule,
+    MatDividerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSnackBarModule
   ],
   exports: [
     MatButtonModule,
@@ -25,6 +34,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatCardModule,
     MatTooltipModule,
     MatDialogModule,
+    MatDividerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSnackBarModule
   ]
 })
 export class MaterialModule {}
