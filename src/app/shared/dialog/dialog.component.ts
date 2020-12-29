@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 
@@ -7,22 +7,18 @@ import { MatDialogRef } from '@angular/material/dialog';
   templateUrl: './dialog.component.html',
   styleUrls: ['./dialog.component.scss']
 })
-export class DialogComponent implements OnInit {
+export class DialogComponent {
 
   dialogForm: FormGroup;
 
   constructor(
     private fb: FormBuilder,
-    public dialogRef: MatDialogRef<DialogComponent>,) {
+    public dialogRef: MatDialogRef<DialogComponent>) {
 
       // creating the form group
       this.dialogForm = this.fb.group({
         resumePassword: ['', Validators.required]
       });
-
-  }
-
-  ngOnInit(): void {
 
   }
 

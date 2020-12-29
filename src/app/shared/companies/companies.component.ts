@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Company } from 'src/app/core/companies';
 import { MatDialog } from '@angular/material/dialog';
 import { CarouselComponent } from '../carousel/carousel.component';
@@ -8,7 +8,7 @@ import { CarouselComponent } from '../carousel/carousel.component';
   templateUrl: './companies.component.html',
   styleUrls: ['./companies.component.scss']
 })
-export class CompaniesComponent implements OnInit {
+export class CompaniesComponent {
 
   // Static company data
   companies: Company[] = [
@@ -49,9 +49,6 @@ export class CompaniesComponent implements OnInit {
   constructor(
     public dialog: MatDialog
   ) { }
-
-  ngOnInit(): void {
-  }
 
   // showCarousel opens carousel component displays projects using bootstrap carousel
   showCarousel(company: Company): void {

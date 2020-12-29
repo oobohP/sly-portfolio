@@ -1,5 +1,5 @@
 import { DialogComponent } from './../../shared/dialog/dialog.component';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
@@ -9,7 +9,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   templateUrl: './splash.component.html',
   styleUrls: ['./splash.component.scss']
 })
-export class SplashComponent implements OnInit {
+export class SplashComponent {
 
   resumeStatus = true;
 
@@ -17,9 +17,6 @@ export class SplashComponent implements OnInit {
     public dialog: MatDialog,
     private _snackBar: MatSnackBar
   ) { }
-
-  ngOnInit(): void {
-  }
 
   // Show's resume on correct password, otherwise shows user error
   showResume(): void {
