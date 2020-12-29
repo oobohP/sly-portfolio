@@ -1,15 +1,4 @@
 
-<!-- <div class="section splash">
-  <mat-card class = "headline-card text-center cent mat-elevation-z0">
-      <h1>{{"Steven Ly"| uppercase}} <i class="fas fa-laptop-code"></i></h1>
-    <mat-card-subtitle style="font-weight: bold;">Software Developer</mat-card-subtitle>
-    <mat-card-content>
-      <button style="background-color:#0a79eb; color:white;" mat-raised-button routerLink="resume">RESUME</button>
-    </mat-card-content>
-  </mat-card>
-</div> -->
-
-
 <section class="splash">
   <mat-card class="container mat-elevation-z0">
     <div style="font-size: 50px;">
@@ -17,7 +6,8 @@
     </div>
     <mat-card-subtitle>Full Stack Software Developer</mat-card-subtitle>
     <mat-card-content>
-      <button style="background-color:#0a79eb;" mat-raised-button>RESUME</button>
+      <button style="background-color:#0a79eb;" mat-raised-button (click)="showResume()">RESUME</button>
     </mat-card-content>
   </mat-card>
 </section>
+

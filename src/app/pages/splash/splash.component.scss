@@ -21,8 +21,13 @@ mat-card-subtitle {
   font-weight: bold;
 }
 
+button {
+  color: white;
+}
+
 // Icon animation
 mat-icon {
+  font-size: 40px;
   animation-name: icon;
   animation-iteration-count: infinite;
   animation-duration: .8s;
@@ -31,14 +36,13 @@ mat-icon {
 
 @keyframes icon {
   from {
-    font-size: 30px;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
-    transform: translateY(0);}
+    transform: translateY(0);
+  }
   to {
-    font-size: 35px;
     transform: translateY(-10px);
   }
 }
