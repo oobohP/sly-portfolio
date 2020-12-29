@@ -1,8 +1,8 @@
 mat-card {
-  z-index: 1;
-  color: black;
   height: 100%;
-  margin-top: -40%;
+  color: black;
+  margin-top: -30%;
+  border-radius: 2%;
   background-image: linear-gradient(
     to top,
     #f3e7e9 0%,
@@ -19,5 +19,4 @@ mat-card-subtitle {
   display: flex;
   margin-top: -15%;
   height: 500px;
-  outline: 2px dashed blue;
 }
