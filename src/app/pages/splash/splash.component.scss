@@ -1,7 +1,7 @@
 
 .splash {
   height: 100%;
-  background-image: url('../../../assets/vectors/material-bg2.png');
+  background-image: url('../../../assets/canyon-cover.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -19,10 +19,6 @@ mat-card-subtitle {
   padding-top: 2%;
   color:grey;
   font-weight: bold;
-}
-
-button {
-  color: white;
 }
 
 // Icon animation
@@ -45,4 +41,50 @@ mat-icon {
   to {
     transform: translateY(-10px);
   }
+}
+
+
+.hero {
+  position: relative;
+  width: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../../../assets/canyon-cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(50%);
+}
+
+.hero-content {
+  position: relative;
+  // font-family: "Monserrat", sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0.625rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
 }

@@ -54,7 +54,8 @@ export class CompaniesComponent {
   showCarousel(company: Company): void {
     if (company.heading === 'Morris Cerullo World Evangelism') {
       this.dialog.open(CarouselComponent, {
-        disableClose: false
+        disableClose: false,
+        panelClass: 'transparent-dialog'
       });
     } else {
       window.open(company.websiteLink);
