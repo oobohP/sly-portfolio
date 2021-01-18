@@ -6,6 +6,7 @@ import { CompaniesComponent } from './companies/companies.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     NavbarComponent,
     CompaniesComponent,
     CarouselComponent,
-    DialogComponent
+    DialogComponent,
+    ScrollTopComponent
   ],
   imports: [
     CommonModule,
@@ -24,6 +26,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
   exports: [
     MaterialModule,
     CompaniesComponent,
+    ScrollTopComponent,
     NavbarComponent
   ],
 })
