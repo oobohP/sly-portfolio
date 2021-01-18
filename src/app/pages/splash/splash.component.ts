@@ -30,7 +30,8 @@ export class SplashComponent {
           this._snackBar.open('Wrong Password Entered!', 'Done', {
             horizontalPosition: 'center',
             verticalPosition: 'top',
-            duration: 3000
+            duration: 3000,
+            panelClass: ['white-snackbar']
           });
         }
       }

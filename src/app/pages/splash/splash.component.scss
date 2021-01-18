@@ -1,26 +1,4 @@
 
-.splash {
-  height: 100%;
-  background-image: url('../../../assets/canyon-cover.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-mat-card {
-  // outline: 2px dashed blue;
-  top: 35%;
-  color: black;
-  position: relative;
-  text-align: center;
-  background-color: transparent;
-}
-
-mat-card-subtitle {
-  padding-top: 2%;
-  color:grey;
-  font-weight: bold;
-}
-
 // Icon animation
 mat-icon {
   font-size: 40px;
@@ -43,7 +21,7 @@ mat-icon {
   }
 }
 
-
+// Hero container and content using flexbox
 .hero {
   position: relative;
   width: cover;
@@ -65,6 +43,7 @@ mat-icon {
   filter: brightness(50%);
 }
 
+// flexi tems
 .hero-content {
   position: relative;
   // font-family: "Monserrat", sans-serif;

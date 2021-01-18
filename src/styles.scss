@@ -26,3 +26,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   overflow: hidden;
   background: transparent;
 }
+
+// Changing theme of snackbar from Material's default
+.white-snackbar {
+
+  // Changes color of action button
+  .mat-simple-snackbar-action {
+    color: black !important;
+  }
+
+  background: white;
+  color: black;
+
+}
