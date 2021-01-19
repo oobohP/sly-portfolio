@@ -16,5 +16,8 @@ img {
 
 img:hover {
   cursor: pointer;
+  transform: scale(1.2);
+
+  transition: transform .3s;
 }
 
