@@ -17,7 +17,8 @@
     <mat-grid-list [cols]="breakpoint" rowHeight="110px" (window:resize)="onResize($event)">
       <mat-grid-tile
         *ngFor="let item of webTech"
-        [colspan]="1">
+        [colspan]="1"
+        matTooltip="{{item.techName}} {{item.description}}">
         <img src="{{item.techLogo}}">
       </mat-grid-tile>
     </mat-grid-list>
@@ -28,7 +29,8 @@
     <mat-grid-list [cols]="breakpoint" rowHeight="110px" (window:resize)="onResize($event)">
       <mat-grid-tile
         *ngFor="let item of backendTech"
-        [colspan]="1">
+        [colspan]="1"
+        matTooltip="{{item.techName}} {{item.description}}">
         <img src="{{item.techLogo}}">
       </mat-grid-tile>
     </mat-grid-list>

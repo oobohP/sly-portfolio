@@ -13,32 +13,39 @@ export interface Technolgy {
 export const webTech: Technolgy[] = [
   {
     techName: 'Angular',
-    description: 'Angular description here',
+    description: 'is a front end javascript framework that provides the developer' +
+    'with the whole package out of the box. Routing, Testing, Modules, CLI, and Animations',
     techLogo: 'assets/dev-icons/angular.png'
   },
   {
     techName: 'React',
-    description: 'React description here',
+    description: 'is a front end javascript framework often referenced as a "view library"' +
+    'a bit different from angular, React does not come with many things included. Both have their' +
+    'use cases and flexibility for each team.',
     techLogo: 'assets/dev-icons/react.png'
   },
   {
     techName: 'Typescript',
-    description: 'Typescript description here',
+    description: 'is a superset of Javascript. Typescript provides a way to describe the shape' +
+    'of an object. Typescript provides type safe checking easing development time in the long run.' +
+    'This website you\'re looking at right now is created in Typescript!',
     techLogo: 'assets/dev-icons/typescript.png'
   },
   {
     techName: 'Javascript',
-    description: 'Javascript description here',
+    description: 'probably needs no introduction. However Javascript is a scripting language' +
+    'that allows you to implement complex features on web pages',
     techLogo: 'assets/dev-icons/javascript.png'
   },
   {
     techName: 'HTML and CSS',
-    description: 'HTMLCSS description here',
+    description: 'are brothers that work together Hypertext Markup Language and Cascading style sheets' +
+    'HTML is markup for the browser and CSS provides the styling for your markup',
     techLogo: 'assets/dev-icons/htmlcss.png'
   },
   {
     techName: 'Bootstrap',
-    description: 'Bootstrap description here',
+    description: 'is a free and open source CSS framework dictated at a mobile first approach',
     techLogo: 'assets/dev-icons/bootstrap.png'
   }
 ];
