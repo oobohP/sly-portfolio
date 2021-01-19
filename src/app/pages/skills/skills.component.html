@@ -1,0 +1,36 @@
+<div class="container">
+  <mat-card-title>Infatuated With The Idea Of Technolgy</mat-card-title>
+  <mat-card-subtitle>
+    I believe that software and technolgy is here to solve everyday problems and make the quality of living better.
+    I am always searching for ways to solve problems as a natural born problem solver, I am always looking for ways
+    to improve myself or the organization I work for. Here are technologies I've worked with professionally.
+  </mat-card-subtitle>
+</div>
+
+<!-- spacer margin for title and subtitle -->
+<div class="card-spacer"></div>
+
+<div class="grid-container">
+
+  <div>
+    <mat-card-title>Front-end</mat-card-title>
+    <mat-grid-list [cols]="breakpoint" rowHeight="110px" (window:resize)="onResize($event)">
+      <mat-grid-tile
+        *ngFor="let item of webTech"
+        [colspan]="1">
+        <img src="{{item.techLogo}}">
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+  <div>
+    <mat-card-title>Backend</mat-card-title>
+    <mat-grid-list [cols]="breakpoint" rowHeight="110px" (window:resize)="onResize($event)">
+      <mat-grid-tile
+        *ngFor="let item of backendTech"
+        [colspan]="1">
+        <img src="{{item.techLogo}}">
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
