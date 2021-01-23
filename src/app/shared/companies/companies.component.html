@@ -1,4 +1,4 @@
-<div class="flex-box">
+<!-- <div class="flex-box">
   <mat-card
     (click)="showCarousel(company)"
     *ngFor="let company of companies"
@@ -6,7 +6,7 @@
     matTooltip="{{company.description}}">
 
     <mat-card-header>
-      <!-- Heading -->
+      Heading
       <mat-card-title>
         {{ company.heading }}
       </mat-card-title>
@@ -14,12 +14,16 @@
 
     <img mat-card-image src="{{ company.siteLogo }}" alt="companies card">
 
-    <!-- Content -->
-    <!-- <mat-card-content>
-      <h4>
-        {{ company.description }}
-      </h4>
-    </mat-card-content> -->
-
   </mat-card>
+</div> -->
+
+
+<div class="container">
+  <img
+    *ngFor="let company of companies"
+    (click)="showCarousel(company)"
+    class="img-fluid container-child mat-elevation-z8"
+    matTooltip="{{company.description}}"
+    matTooltipClass="tool-background"
+  src="{{ company.siteLogo }}" alt="{{company.heading}} website snapshot">
 </div>

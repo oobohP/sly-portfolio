@@ -1,22 +1,19 @@
 
-.flex-box {
-  display: flex;
-  flex-wrap: wrap;
-}
+.container-child {
+  margin: 1%;
 
-.card-style {
-  margin-top: 1%;
-  margin-bottom: 1%;
-  // card properties
-  color: black;
-  max-width: 400px;
-  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-
-  // card animations
+  // card animation
   transition: transform .3s;
 }
 
-.card-style:hover {
+// fluid image for companies
+.img-fluid {
+  max-width: 500px;
+  width: 100%;
+}
+
+.container-child:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
+

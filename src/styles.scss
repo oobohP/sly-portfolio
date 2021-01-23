@@ -17,6 +17,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   margin-bottom: 1%;
 }
 
+// Material UI custom classes
 .mat-tooltip {
   font-size: 15px;
 }
@@ -37,5 +38,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
   background: white;
   color: black;
+}
 
+// changed tooltip background for companies component to a darker black for easier readability
+.tool-background {
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 1);
 }

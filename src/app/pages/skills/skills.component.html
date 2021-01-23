@@ -20,7 +20,7 @@
         *ngFor="let item of webTech"
         [colspan]="1"
         matTooltip="{{item.techName}} {{item.description}}">
-        <img src="{{item.techLogo}}">
+        <img src="{{item.techLogo}}" alt="{{item.techName}} logo">
       </mat-grid-tile>
     </mat-grid-list>
   </div>
